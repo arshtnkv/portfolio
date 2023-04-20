@@ -1,0 +1,18 @@
+.section {
+  position: relative;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  &--nopadding {
+    .container {
+      padding: 0;
+    }
+  }
+
+  &--fullscreen {
+    min-height: 100vh;
+  }
+}

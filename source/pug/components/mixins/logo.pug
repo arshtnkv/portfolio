@@ -1,0 +1,7 @@
+mixin logo()
+  if(currentUrl === "index.html")
+    .logo&attributes(attributes)
+      +icon("logo", 300, 40)
+  else
+    a.logo(href="index.html", aria-label="Переход на главную")&attributes(attributes)
+      +icon("logo", 300, 40)

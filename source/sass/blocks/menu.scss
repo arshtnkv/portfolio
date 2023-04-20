@@ -1,0 +1,51 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 10px 0;
+  background-color: $color-nero2;
+  box-shadow: inset 0 -1px 0px rgba($color-crusoe, 1);
+  transform: translateY(0);
+  transition: transform $trans-600;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+    transition: transform $trans-600;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &__toggle {
+    display: none;
+
+    @include vp-1023 {
+      display: inline-block;
+      margin-left: auto;
+    }
+  }
+}

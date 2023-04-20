@@ -1,0 +1,48 @@
+mixin socials()
+  -
+    const socialList= [
+      //- {
+      //-   icon: {
+      //-     name: "vk",
+      //-     width: 38,
+      //-     height: 38
+      //-   },
+      //-   href: "#",
+      //-   text: "Вконтакте",
+      //- },
+      {
+        icon: {
+          name: "github",
+          width: 38,
+          height: 38
+        },
+        href: "gitHub.com//arshtnkv",
+        text: "gitHub",
+      },
+      //- {
+      //-   icon: {
+      //-     name: "twitter",
+      //-     width: 38,
+      //-     height: 38
+      //-   },
+      //-   href: "#",
+      //-   text: "twitter",
+      //- },
+      //- {
+      //-   icon: {
+      //-     name: "instagram",
+      //-     width: 38,
+      //-     height: 38
+      //-   },
+      //-   href: "#",
+      //-   text: "instagram",
+      //- },
+    ]
+
+  .socials&attributes(attributes)
+    ul.socials__list
+      each it in socialList
+        li.socials__item
+          a.link.link--white(href=it.href target= "blank" title=it.text aria-label=it.text)
+            span.visually-hidden !{it.text}
+            +icon(it.icon.name, it.icon.width, it.icon.height)

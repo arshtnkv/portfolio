@@ -1,0 +1,29 @@
+mixin header(headerMods, currentUrl)
+  header.header(class=headerMods)
+    canvas#sphere(data-lag="8")
+    .container
+      .header__github(data-speed="1")
+        +btn({href: "https://github.com/arshtnkv?tab=repositories", iconName: "github", iconWidth: 50, iconHeight: 50, isExternal: true})#btn-github.btn--hover-scale
+      h1.header__title.title.title--h1(data-speed=".8" aria-label="Hi, i'm Arshtnkv, web developer")
+        span.text Hi,
+        br
+        span.text I'm
+        span.sign
+          | F
+          span.fast-flicker r
+          span.flicker o
+          | n
+          span.flicker t
+          span.fast-flicker -
+          | e
+          span.fast-flicker n
+          | d
+        br
+        strong.text.box developer
+      nav.header__nav
+        ul.header__nav-list
+          li.header__nav-item
+            +btn({text: "Resume", href: "https://drive.google.com/file/d/1KqmK2uDIgbXw-l6uQoEtdRDoI_SVMbdK/view?usp=share_link", isExternal: true})#btn-cv.btn--default
+          li.header__nav-item
+            +btn({text: "My works!"})#btn-work.btn--default(data-btn="works")
+

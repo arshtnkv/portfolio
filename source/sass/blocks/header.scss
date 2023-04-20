@@ -1,0 +1,67 @@
+.header {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    min-height: 100vh;
+
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    @include vp-767 {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    will-change: transform;
+    z-index: 29;
+  }
+
+  &__github {
+    align-self: center;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__nav-list {
+    max-width: 250px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__nav-item {
+    margin-bottom: 20px;
+    &:nth-child(2n) {
+      .btn::before {
+        inset: unset;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.footer {
+  background-color: $color-nero2;
+  box-shadow: inset 0 1px 0px rgba($color-crusoe, 1);
+
+  .container {
+    display: flex;
+    // flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include vp-767 {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: $color-crusoe;
+    user-select: none;
+  }
+
+  &__copyright .link {
+    margin-left: 10px;
+  }
+
+  &__link {
+    max-height: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+      color: $color-crusoe;
+    }
+  }
+}

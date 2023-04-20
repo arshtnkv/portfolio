@@ -1,0 +1,119 @@
+.card {
+  position: relative;
+  // perspective: 1000px;
+  width: calc(33.3% - 30px);
+  padding-bottom: 33.3%;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+
+  @include vp-1023 {
+    width: calc(50% - 10px);
+    padding-bottom: 50%;
+  }
+
+  @include vp-599 {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-default-black, .8);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba($color-crusoe, .5);
+    transform: rotate3d(1, 0, 0, 90deg);
+    pointer-events: none;
+    text-align: center;
+  }
+
+  &__info .title--h3 {
+    margin-bottom: 20px;
+  }
+
+  &__info p {
+    margin: 0;
+    font-family: $ff-roboto;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__info-more {
+    font-family: $ff-roboto;
+    font-weight: 300;
+    font-size: 10px;
+    text-transform: lowercase;
+    letter-spacing: 1.5px;
+  }
+}
+
+.in-top .card__info {
+  transform-origin: 50% 0%;
+  animation: in-top 300ms ease 0ms 1 forwards;
+}
+.in-right .card__info {
+  transform-origin: 100% 0%;
+  animation: in-right 300ms ease 0ms 1 forwards;
+}
+.in-bottom .card__info {
+  transform-origin: 50% 100%;
+  animation: in-bottom 300ms ease 0ms 1 forwards;
+}
+.in-left .card__info {
+  transform-origin: 0% 0%;
+  animation: in-left 300ms ease 0ms 1 forwards;
+}
+.out-top .card__info {
+  transform-origin: 50% 0%;
+  animation: out-top 300ms ease 0ms 1 forwards;
+}
+.out-right .card__info {
+  transform-origin: 100% 50%;
+  animation: out-right 300ms ease 0ms 1 forwards;
+}
+.out-bottom .card__info {
+  transform-origin: 50% 100%;
+  animation: out-bottom 300ms ease 0ms 1 forwards;
+}
+.out-left .card__info {
+  transform-origin: 0% 0%;
+  animation: out-left 300ms ease 0ms 1 forwards;
+}

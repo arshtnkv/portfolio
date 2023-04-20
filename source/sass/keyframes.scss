@@ -1,0 +1,316 @@
+// используйте для скрытия нежелательных анимаций-скачков при поворотах экрана
+@keyframes disableBreakpointAnimation {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6e6;
+    text-shadow: 0 0 0.6rem #ffe6e6, 0 0 1.5rem $color-screamin-green,
+      -0.2rem 0.1rem 1rem $color-screamin-green, 0.2rem 0.1rem 1rem $color-screamin-green,
+      0 -0.5rem 2rem $color-crusoe, 0 0.5rem 3rem $color-crusoe;
+  }
+  28%,
+  33% {
+    color: $color-screamin-green;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: $color-crusoe;
+    text-shadow: none;
+  }
+}
+
+@keyframes shine {
+  0% {
+    color: $color-crusoe;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6e6;
+    text-shadow: 0 0 0.6rem #ffe6e6, 0 0 1.5rem $color-screamin-green,
+      -0.2rem 0.1rem 1rem $color-screamin-green, 0.2rem 0.1rem 1rem $color-screamin-green,
+      0 -0.5rem 2rem $color-crusoe, 0 0.5rem 3rem $color-crusoe;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visy {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// @keyframes hi {
+//   to {
+//     opacity: 0;
+//     min-height: 0;
+//     min-width: 0;
+//     padding: 0;
+//     margin: 0;
+//     border: 0;
+//   }
+// }
+
+// @keyframes hidd {
+//   0% {
+//     visibility: visible;
+//     height: 100%;
+//   }
+
+//   100% {
+//     visibility: hidden;
+//     max-width: 0;
+//     width: 0;
+//     height: 0;
+//     margin: 0;
+//     font-size: 0;
+//   }
+// }
+
+@keyframes in-top {
+  from {
+      transform: rotate3d(-1, 0, 0, 90deg);
+  }
+  to {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-right {
+  from {
+      transform: rotate3d(0, -1, 0, 90deg);
+  }
+  to {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-bottom {
+  from {
+      transform: rotate3d(1, 0, 0, 90deg);
+  }
+  to {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes in-left {
+  from {
+      transform: rotate3d(0, 1, 0, 90deg);
+  }
+  to {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+@keyframes out-top {
+  from {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+      transform: rotate3d(-1, 0, 0, 104deg);
+  }
+}
+
+@keyframes out-right {
+  from {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+      transform: rotate3d(0, -1, 0, 104deg);
+  }
+}
+
+@keyframes out-bottom {
+  from {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+      transform: rotate3d(1, 0, 0, 104deg);
+  }
+}
+
+@keyframes out-left {
+  from {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+      transform: rotate3d(0, 1, 0, 104deg);
+  }
+}
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+@keyframes textureSpin {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-47.5%);
+  }
+}
+
+@keyframes textureSpinreverse {
+  from {
+      transform: translateX(-47.5%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}

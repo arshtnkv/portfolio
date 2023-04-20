@@ -1,0 +1,24 @@
+mixin intro()
+  section.section.intro#intro&attributes(attributes)
+    canvas#sphere
+    .container
+      .intro__github
+        +btn({href: "https://github.com/arshtnkv?tab=repositories", iconName: "github", iconWidth: 50, iconHeight: 50, isExternal: true})#btn-github.btn--hover-scale
+      h1.intro__title.title.title--h1(aria-label="Hi, i'm Arshtnkv, web developer")
+        span.text Hi,
+        br
+        span.text I'm
+        span.sign
+          | F
+          span.fast-flicker r
+          span.flicker o
+          | n
+          span.flicker t
+          | e
+          span.fast-flicker n
+          | d
+        br
+        strong.text.box developer
+      .intro__links
+        +btn({text: "Download CV", href: "https://drive.google.com/file/d/1KqmK2uDIgbXw-l6uQoEtdRDoI_SVMbdK/view?usp=share_link", isExternal: true})#btn-cv.btn--default
+        +btn({text: "My work!"})#btn-work.btn--default(data-btn="Work")

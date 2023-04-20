@@ -1,0 +1,10 @@
+mixin works(data)
+  section#works.section.works&attributes(attributes)
+    .container
+      h2.works__title.title.title--h2.title--center.title--effect
+        span !{data.title}
+
+      .works__gallery
+        each it in data.gallery
+          +card(it)
+
