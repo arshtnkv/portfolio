@@ -11,7 +11,7 @@ import {initSphere} from './modules/init-sphere';
 import {initHover3d} from './modules/init-hover3d';
 import {initMapBlock} from './modules/init-map';
 import {initParallax} from './modules/init-parallax';
-import {initLazyLoad} from './modules/init-lazy-loading';
+// import {initLazyLoad} from './modules/init-lazy-loading';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initNavigationChanger();
   initAnime();
   initParallax();
-  initLazyLoad();
+  // initLazyLoad();
 
   window.addEventListener('load', () => {
     initPreloader();
