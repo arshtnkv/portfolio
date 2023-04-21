@@ -22,10 +22,8 @@ html {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
-  // если по прежнему есть проблемы с выравниванием
-  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+
 }
 
 body {
@@ -65,19 +63,12 @@ textarea {
   resize: none;
 }
 
-// chrome autofill background removal
-// если на проекте у инпутов используются разные цвета фонов\текста -
-// удалите это из глобала и используйте локально с нужными цветами
-// rgba не подойдет, сконвертируйте цвет в hex без прозрачности
-// если в стилях уже используется box-shadow есть другое решение -
-// задать к списку транзишенов `background-color 10000000s ease-out`
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px $color-default-white;
 
   -webkit-text-fill-color: $color-default-black;
 }
 
-// firefox placeholder \ invalid fix + ios bdrs
 input,
 textarea {
   border-radius: 0;
@@ -95,7 +86,6 @@ select {
   border-radius: 0;
 }
 
-// ie11 X removal
 input {
   &::-ms-clear,
   &::-ms-reveal {
@@ -103,7 +93,6 @@ input {
   }
 }
 
-// chrome search X removal
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -111,7 +100,6 @@ input[type="search"]::-webkit-search-results-decoration {
   appearance: none;
 }
 
-// input[number] arrows removal
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
@@ -123,7 +111,6 @@ input[type="number"] {
   appearance: textfield;
 }
 
-// ios button \ inputs reset
 select,
 textarea,
 input:matches([type="email"],

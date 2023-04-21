@@ -10,42 +10,74 @@
   transform: translateY(0);
   transition: transform $trans-600;
 
+  @include vp-1023 {
+    padding: 2px 0;
+  }
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  &.hidden {
-    transform: translateY(-100%);
-    transition: transform $trans-600;
-  }
-}
-
-.nav {
-  &__list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    @include vp-1023 {
-      display: none;
-    }
-  }
-
-  &__item {
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-
-  &__toggle {
+  &__nav-toggle {
     display: none;
 
     @include vp-1023 {
       display: inline-block;
       margin-left: auto;
+    }
+  }
+
+  &__nav-wrapper {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__nav-item {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+    transition: transform $trans-600;
+  }
+
+  &.is-open {
+    height: 100vh;
+
+    .menu__nav-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .menu__nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu__nav-item {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
   }
 }

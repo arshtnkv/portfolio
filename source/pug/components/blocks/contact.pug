@@ -3,8 +3,8 @@ mixin contact()
     .container
       h2.contact__title.title.title--h2.title--center.title--effect(data-item="contact") Contact me
       .contact__wrapper
-        .contact__info.container
-          ul.contact__list
+        .contact__info
+          ul.contact__list.container
             li.contact__item
               +btn({text: "Telegram", href: "https://telegram.me/arshtnkv", isExternal: true}).btn--default
             li.contact__item

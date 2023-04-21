@@ -14,12 +14,12 @@ mixin menu()
   .menu.hidden
     .container
       +logo()
-      nav.nav
-        button.nav__toggle.btn.btn--burger(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+      nav.menu__nav
+        button.menu__nav-toggle.btn.btn--burger(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
           each span in Array(9).fill('')
             span
-        .nav__wrapper
-          ul.nav__list
+        .menu__nav-wrapper
+          ul.menu__nav-list
             each btn in btns
-              li.nav__item
+              li.menu__nav-item
                 +btn({text: btn.text, href: btn.href}).btn--fill-text(data-btn=btn.text aria-label=`Перейти к блоку ${btn.text}` data-navigation-link)

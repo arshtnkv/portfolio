@@ -1259,7 +1259,6 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
   will-change: transform;
 }
@@ -1279,10 +1278,8 @@ button,
 
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
   text-transform: lowercase !important;
   font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {
@@ -1318,7 +1315,6 @@ button,
 }
 
 .no-transition {
-  /* stylelint-disable-next-line */
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
@@ -2181,6 +2177,23 @@ button,
   justify-content: space-between;
 }
 
+.menu__nav-toggle {
+  display: none;
+}
+
+.menu__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__nav-item:not(:first-child) {
+  margin-left: 20px;
+}
+
 .menu.hidden {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
@@ -2192,21 +2205,44 @@ button,
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
-.nav__list {
+.menu.is-open {
+  height: 100vh;
+}
+
+.menu.is-open .menu__nav-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.menu.is-open .menu__nav-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu.is-open .menu__nav-item {
   margin: 0;
-  list-style: none;
 }
 
-.nav__item:not(:first-child) {
-  margin-left: 20px;
-}
-
-.nav__toggle {
-  display: none;
+.menu.is-open .menu__nav-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .sign {
@@ -2556,7 +2592,7 @@ button,
 
 .map {
   width: 100%;
-  height: 58vh;
+  height: calc((1vw + 1vh) * 27);
   -webkit-filter: invert(90%) hue-rotate(220deg);
   filter: invert(90%) hue-rotate(220deg);
 }
@@ -2876,7 +2912,6 @@ button,
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-bottom: 30px;
   row-gap: 50px;
 }
 
@@ -2884,47 +2919,6 @@ button,
   padding-top: 0;
   padding-bottom: 0;
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
 
 @media (max-width: 1439px) {
   .container {
@@ -2937,23 +2931,35 @@ button,
     padding: 0 24px;
   }
 
-  .nav__list {
-    display: none;
+  .menu {
+    padding: 2px 0;
   }
 
-  .nav__toggle {
+  .menu__nav-toggle {
     display: inline-block;
     margin-left: auto;
   }
 
+  .menu__nav-wrapper {
+    display: none;
+  }
+
   .section .container {
-    padding-top: 30px;
+    padding-top: 75px;
     padding-bottom: 50px;
   }
 
   .card {
     width: calc(50% - 10px);
     padding-bottom: 50%;
+  }
+
+  .contact > .container {
+    padding-bottom: 0;
+  }
+
+  .contact__title {
+    margin-bottom: 50px;
   }
 
   .contact__item:last-child {
@@ -2984,15 +2990,6 @@ button,
     line-height: 1.2;
   }
 
-  .footer .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
   .header .container {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -3006,6 +3003,11 @@ button,
 
   #sphere {
     display: none;
+  }
+
+  .contact > .container {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .contact__list {

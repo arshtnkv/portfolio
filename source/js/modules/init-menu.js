@@ -1,19 +1,19 @@
 const initMenu = () => {
   const menu = document.querySelector('.menu');
 
-  if (!menu || document.documentElement.clientWidth > 767) {
+  if (!menu || document.documentElement.clientWidth > 1023) {
     return;
   }
 
-  const nav = menu.querySelector('.nav');
-  const burger = nav.querySelector('.nav__toggle');
-  const btns = nav.querySelectorAll('.nav__item button');
+  const nav = menu.querySelector('.menu__nav');
+  const burger = nav.querySelector('.menu__nav-toggle');
+  const links = nav.querySelectorAll('.menu__nav-item a');
 
   burger.addEventListener('click', toggleMenu);
   document.addEventListener('keydown', onPopupEscPress);
   window.addEventListener('resize', closeMenu);
 
-  btns.forEach((btn) => {
+  links.forEach((btn) => {
     btn.addEventListener('click', closeMenu);
   });
 
