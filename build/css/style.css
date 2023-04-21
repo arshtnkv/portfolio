@@ -2592,7 +2592,7 @@ button,
 
 .map {
   width: 100%;
-  height: calc((1vw + 1vh) * 27);
+  height: calc((1vw + 1vh) * 17);
   -webkit-filter: invert(90%) hue-rotate(220deg);
   filter: invert(90%) hue-rotate(220deg);
 }
@@ -2924,6 +2924,16 @@ button,
   .container {
     padding: 0 32px;
   }
+
+  .map {
+    height: calc((1vw + 1vh) * 20);
+  }
+}
+
+@media (max-width: 1279px) {
+  .map {
+    height: calc((1vw + 1vh) * 25);
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2949,9 +2959,8 @@ button,
     padding-bottom: 50px;
   }
 
-  .card {
-    width: calc(50% - 10px);
-    padding-bottom: 50%;
+  .map {
+    height: calc((1vw + 1vh) * 30);
   }
 
   .contact > .container {
@@ -3003,6 +3012,15 @@ button,
 
   #sphere {
     display: none;
+  }
+
+  .map {
+    height: calc((1vw + 1vh) * 25);
+  }
+
+  .card {
+    width: calc(50% - 24px);
+    padding-bottom: 50%;
   }
 
   .contact > .container {

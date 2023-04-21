@@ -1,7 +1,7 @@
 const initMenu = () => {
   const menu = document.querySelector('.menu');
 
-  if (!menu || document.documentElement.clientWidth > 1023) {
+  if (!menu || document.documentElement.clientWidth > 1024) {
     return;
   }
 
