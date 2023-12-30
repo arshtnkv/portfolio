@@ -1316,7 +1316,6 @@ button,
 
 .no-transition {
   -webkit-transition: none !important;
-  -o-transition: none !important;
   transition: none !important;
 }
 
@@ -1365,7 +1364,6 @@ button,
   opacity: 0;
   -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
@@ -1440,7 +1438,6 @@ button,
 
 .modal--preload {
   -webkit-transition: none;
-  -o-transition: none;
   transition: none;
 }
 
@@ -1489,7 +1486,6 @@ button,
   border-radius: 5px;
   outline: none;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 
@@ -1515,7 +1511,6 @@ button,
   color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -1609,7 +1604,6 @@ button,
   height: 28px;
   border: 1.5px solid #2c39f2;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 
@@ -1625,7 +1619,6 @@ button,
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
@@ -1638,7 +1631,6 @@ button,
   border: 1px solid #2c39f2;
   border-radius: 50%;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 
@@ -1655,7 +1647,6 @@ button,
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -1694,7 +1685,6 @@ button,
   -ms-user-select: none;
   user-select: none;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -1703,7 +1693,6 @@ button,
   display: block;
   letter-spacing: 2px;
   -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -1720,7 +1709,6 @@ button,
   color: #195931;
   overflow: hidden;
   -webkit-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
 
@@ -1748,7 +1736,6 @@ button,
   text-decoration-color: rgba(255, 255, 255, 0);
   -webkit-transition: -webkit-text-decoration-color 0.3s ease;
   transition: -webkit-text-decoration-color 0.3s ease;
-  -o-transition: text-decoration-color 0.3s ease;
   transition: text-decoration-color 0.3s ease;
   transition: text-decoration-color 0.3s ease, -webkit-text-decoration-color 0.3s ease;
 }
@@ -1758,7 +1745,6 @@ button,
   text-decoration-color: #195931;
   -webkit-transition: -webkit-text-decoration-color 0.3s ease;
   transition: -webkit-text-decoration-color 0.3s ease;
-  -o-transition: text-decoration-color 0.3s ease;
   transition: text-decoration-color 0.3s ease;
   transition: text-decoration-color 0.3s ease, -webkit-text-decoration-color 0.3s ease;
 }
@@ -1784,7 +1770,6 @@ button,
   -ms-user-select: none;
   user-select: none;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -1803,7 +1788,6 @@ button,
   overflow: hidden;
   z-index: 5;
   -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -1829,7 +1813,6 @@ button,
   -ms-transform: skewX(-10deg);
   transform: skewX(-10deg);
   -webkit-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
   z-index: -1;
 }
@@ -1837,14 +1820,12 @@ button,
 .btn--default.focus-visible:focus {
   color: #ffffff;
   -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 .btn--default.focus-visible:focus::after {
   width: 110%;
   -webkit-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
 
@@ -1853,7 +1834,6 @@ button,
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -1868,7 +1848,6 @@ button,
   color: #195931;
   overflow: hidden;
   -webkit-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
 
@@ -1905,7 +1884,6 @@ button,
 .btn--hover-scale {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
@@ -1913,7 +1891,6 @@ button,
 .btn--hover-scale svg {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
@@ -1930,7 +1907,6 @@ button,
   transform: scale(1.4);
   -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
   transition: color 0.3s ease, -webkit-transform 0.3s ease;
-  -o-transition: color 0.3s ease, transform 0.3s ease;
   transition: color 0.3s ease, transform 0.3s ease;
   transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
@@ -1946,14 +1922,12 @@ button,
   opacity: 0;
   border-radius: 50%;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
 .btn--hover-circle.focus-visible:focus::before {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -1988,7 +1962,6 @@ button,
   transform: scale(0);
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
-  -o-transition: transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
@@ -2003,7 +1976,6 @@ button,
   transform: scale(1.1);
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
-  -o-transition: transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
@@ -2086,7 +2058,6 @@ button,
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   -webkit-transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  -o-transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
 
@@ -2096,17 +2067,14 @@ button,
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  -o-transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
 
 .btn--burger.is-open span {
   border-radius: 50%;
   -webkit-transition-delay: 200ms;
-  -o-transition-delay: 200ms;
   transition-delay: 200ms;
   -webkit-transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  -o-transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
 
@@ -2158,9 +2126,9 @@ button,
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+  z-index: 200;
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
-  -o-transition: transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
@@ -2200,7 +2168,6 @@ button,
   transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
-  -o-transition: transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
@@ -2471,7 +2438,6 @@ button,
   height: 100%;
   z-index: 1000;
   -webkit-transition: all 0.3s 1s ease-out;
-  -o-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
 }
 
@@ -2544,7 +2510,6 @@ button,
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   -webkit-transition: all 0.3s 1s ease-out;
-  -o-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
 }
 
@@ -2552,7 +2517,6 @@ button,
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s 0.3s ease-out;
-  -o-transition: all 0.5s 0.3s ease-out;
   transition: all 0.5s 0.3s ease-out;
 }
 
@@ -2560,7 +2524,6 @@ button,
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s 0.3s ease-out;
-  -o-transition: all 0.5s 0.3s ease-out;
   transition: all 0.5s 0.3s ease-out;
 }
 
@@ -2569,7 +2532,6 @@ button,
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
-  -o-transition: all 0.7s 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
 }
 
@@ -2578,7 +2540,6 @@ button,
   -ms-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
-  -o-transition: all 0.7s 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
 }
 
@@ -3114,7 +3075,6 @@ button,
     text-decoration-color: #195931;
     -webkit-transition: -webkit-text-decoration-color 0.3s ease;
     transition: -webkit-text-decoration-color 0.3s ease;
-    -o-transition: text-decoration-color 0.3s ease;
     transition: text-decoration-color 0.3s ease;
     transition: text-decoration-color 0.3s ease, -webkit-text-decoration-color 0.3s ease;
   }
@@ -3122,14 +3082,12 @@ button,
   .btn--default:hover:not(.focus-visible) {
     color: #ffffff;
     -webkit-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
   }
 
   .btn--default:hover:not(.focus-visible)::after {
     width: 110%;
     -webkit-transition: width 0.3s ease;
-    -o-transition: width 0.3s ease;
     transition: width 0.3s ease;
   }
 
@@ -3157,7 +3115,6 @@ button,
     transform: scale(1.4);
     -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
     transition: color 0.3s ease, -webkit-transform 0.3s ease;
-    -o-transition: color 0.3s ease, transform 0.3s ease;
     transition: color 0.3s ease, transform 0.3s ease;
     transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
   }
@@ -3165,7 +3122,6 @@ button,
   .btn--hover-circle:hover:not(.focus-visible)::before {
     opacity: 1;
     -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
   }
 
@@ -3175,7 +3131,6 @@ button,
     transform: scale(1.1);
     -webkit-transition: -webkit-transform 0.6s ease;
     transition: -webkit-transform 0.6s ease;
-    -o-transition: transform 0.6s ease;
     transition: transform 0.6s ease;
     transition: transform 0.6s ease, -webkit-transform 0.6s ease;
   }
@@ -3185,7 +3140,6 @@ button,
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    -o-transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
     transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
   }
 }
