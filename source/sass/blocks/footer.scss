@@ -4,27 +4,31 @@
 
   .container {
     display: flex;
-    // flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   &__copyright {
-    margin: 0;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-self: flex-end;
     color: $color-crusoe;
+
+    font-family: $ff-roboto;
+    font-size: 13px;
+    font-weight: 400;
     user-select: none;
+
+    span {
+      margin: 0 7px 0 0;
+    }
+
+    a {
+      margin: 0 7px 0 0;
+    }
   }
 
-  &__copyright .link {
-    margin-left: 10px;
-  }
-
-  &__link {
+  &__github {
     max-height: 20px;
     svg {
       width: 20px;

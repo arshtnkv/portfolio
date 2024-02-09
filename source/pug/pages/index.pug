@@ -7,9 +7,11 @@ block variables
   - const headerMods = ""
   - const hasFooter = true
   - const footerMods = ""
-  - const currentUrl = "index.html"
+  - const currentUrl = "index.html";
 
 block main
   main
+    +intro()
     +works(works)
     +contact()
+    +map()(data-map)

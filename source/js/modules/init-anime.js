@@ -1,62 +1,73 @@
 import {timeline, stagger} from '../vendor/anime';
 
-const initAnime = () => {
-  const texts = document.querySelectorAll('.text');
-  if (!texts) {
-    return;
-  }
-  texts.forEach((text) => {
-    text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>');
-
-    const animeTitle = timeline({
-      targets: '.text span',
+const animeIntro = timeline({
+  easing: 'easeInOutCubic',
+  autoplay: false,
+})
+    .add({
+      targets: '.intro__github ',
+      duration: 3000,
+      // translateY: [-100, 0],
+      translateX: [-3000, 0],
+      rotate: [-3000, 0],
+      opacity: [0, 1],
+    }, '-=200')
+    .add({
+      targets: '.intro__links-item',
+      duration: 500,
+      translateX: [1000, 0],
+      opacity: [0, 1],
+      delay: stagger(500),
+    })
+    .add({
+      targets: '.crushed-text span',
       easing: 'easeOutExpo',
-    });
-
-    animeTitle.add({
       translateX: [-1000, 0],
       scale: [10, 1],
       opacity: [0, 1],
-      duration: 1500,
+      duration: 700,
       delay: stagger(100),
+    })
+    .add({
+      targets: '#sphere',
+      duration: 2000,
+      translateY: [-1500, 0],
+      opacity: [0, 1],
     });
-  });
 
-  const animeIcon = timeline({
-    targets: '#btn-github',
-    easing: 'easeOutCirc',
-  });
+const animeElViewportScroll = () => {
+  const blocks = document.querySelectorAll('[data-animate-block]');
+  window.addEventListener('scroll', viewportAnimation);
 
-  animeIcon.add({
-    translateY: [-3000, 0],
-    scale: [10, 1],
-    duration: 1000,
-    delay: 4000,
-  });
+  function viewportAnimation() {
+    let scrollY = window.pageYOffset;
 
-  const btnCV = timeline({
-    targets: '#btn-cv',
-    easing: 'easeOutCirc',
-  });
+    blocks.forEach(function (current) {
+      const viewportHeight = window.innerHeight;
+      const triggerTop = (current.offsetTop + (viewportHeight * 0.2)) - viewportHeight;
+      const blockHeight = current.offsetHeight;
+      const blockSpace = triggerTop + blockHeight;
+      const inView = scrollY > triggerTop && scrollY <= blockSpace;
+      const isAnimated = current.classList.contains('ss-animated');
 
-  btnCV.add({
-    translateX: [-4000, 0],
-    scale: [10, 1],
-    duration: 1000,
-    delay: 2000,
-  });
+      if (inView && (!isAnimated)) {
+        const animeUp = timeline({
+          targets: current.querySelectorAll('[data-animate-el]'),
+          duration: 2000,
+          easing: 'easeInOutCubic',
+        });
 
-  const btnWork = timeline({
-    targets: '#btn-work',
-    easing: 'easeOutCirc',
-  });
-
-  btnWork.add({
-    translateX: [-4000, 0],
-    scale: [10, 1],
-    duration: 1000,
-    delay: 2500,
-  });
+        animeUp.add({
+          opacity: [0, 1],
+          translateY: [500, 0],
+          delay: stagger(400, {start: 200}),
+          begin() {
+            current.classList.add('ss-animated');
+          },
+        });
+      }
+    });
+  }
 };
 
-export {initAnime};
+export {animeIntro, animeElViewportScroll};

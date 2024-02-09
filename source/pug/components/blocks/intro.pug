@@ -5,20 +5,37 @@ mixin intro()
       .intro__github
         +btn({href: "https://github.com/arshtnkv?tab=repositories", iconName: "github", iconWidth: 50, iconHeight: 50, isExternal: true})#btn-github.btn--hover-scale
       h1.intro__title.title.title--h1(aria-label="Hi, i'm Arshtnkv, web developer")
-        span.text Hi,
+        span.crushed-text
+          span H
+          span i
+          span ,
         br
-        span.text I'm
-        span.sign
-          | F
+        span.crushed-text
+          span I
+          span '
+          span m
+        span.crushed-text.sign
+          span F
           span.fast-flicker r
           span.flicker o
-          | n
+          span n
           span.flicker t
-          | e
+          span e
           span.fast-flicker n
-          | d
+          span d
         br
-        strong.text.box developer
-      .intro__links
-        +btn({text: "Download CV", href: "https://drive.google.com/file/d/1KqmK2uDIgbXw-l6uQoEtdRDoI_SVMbdK/view?usp=share_link", isExternal: true})#btn-cv.btn--default
-        +btn({text: "My work!"})#btn-work.btn--default(data-btn="Work")
+        strong.crushed-text.box
+          span d
+          span e
+          span v
+          span e
+          span l
+          span o
+          span p
+          span e
+          span r
+      ul.intro__links
+        li.intro__links-item
+          +btn({text: "Resume", href: "https://drive.google.com/file/d/1KqmK2uDIgbXw-l6uQoEtdRDoI_SVMbdK/view?usp=share_link", isExternal: true})#btn-cv.btn--default
+        li.intro__links-item
+          +btn({text: "My works!", href: "#works"})#btn-work.btn--default(data-btn="works" data-navigation-link)

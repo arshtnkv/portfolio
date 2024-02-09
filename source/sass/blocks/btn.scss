@@ -4,7 +4,7 @@
   display: inline-flex;
   padding: 0;
   font-family: $ff-roboto;
-  color: $color-snow;
+  color: inherit;
   border: none;
   background-color: transparent;
   user-select: none;
@@ -15,12 +15,15 @@
     justify-content: center;
     // max-width: 230px;
     width: 100%;
-    padding: 10px 20px;
-    font-weight: 400;
+    padding: 11px 20px;
     text-align: center;
+
+    font-weight: 700;
+
     color: $color-crusoe;
     background-color: $color-nero;
-    border: 1px solid $color-crusoe;
+    border: 2px solid $color-crusoe;
+
     overflow: hidden;
     z-index: 5;
     transition: color $trans-default;
@@ -100,23 +103,6 @@
     }
   }
 
-  &--bg-nero {
-    background-color: $color-nero;
-  }
-
-  &--icon {
-    svg {
-      margin-left: 20px;
-      color: $color-crusoe;
-    }
-
-    @include hover-focus {
-      svg {
-        color: $color-snow;
-      }
-    }
-  }
-
   &--hover-scale {
     transition: transform $trans-default;
     svg {
@@ -155,42 +141,13 @@
     }
   }
 
-  &--filter {
-
-    &.is-active {
-      opacity: 0.6;
-      pointer-events: none;
-    }
-  }
-
-  &--up {
-    position: fixed;
-    bottom: 5em;
-    left: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    background-color: $color-nero;
-    box-shadow: 0 0 5px $color-crusoe;
-    border: 3px solid $color-crusoe;
-    border-radius: 50%;
-    z-index: 100;
-    transform: scale(0);
-    transition: transform $trans-600;
-
-    svg {
-      color: $color-screamin-green;
-    }
+  &--underline {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: $color-transparent;
 
     @include hover-focus {
-      transform: scale(1.1);
-      transition: transform $trans-600;
-    }
-
-    &.is-show {
-      transform: scale(1);
+      text-decoration-color: inherit;
     }
   }
 

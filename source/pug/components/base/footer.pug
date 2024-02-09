@@ -1,7 +1,8 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
-      p.footer__copyright © 2023
-        | #[a(class="link link--hover-underline" href="mailto:arshtnkv@gmail.com") arshtnkv@gmail.com]
-      .footer__link
+      .footer__github
         +btn({href: "https://github.com/arshtnkv?tab=repositories", iconName: "github", iconWidth: 20, iconHeight: 20, isExternal: true}).btn--hover-circle.btn--radiius-50(title="github" aria-label="Кнопка github")
+      .footer__copyright
+        +btn({text: "arshtnkv@gmail.com", href: "mailto:arshtnkv@gmail.com"}).btn--underline
+        span © 2020 - 2023 Copyright

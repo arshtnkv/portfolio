@@ -1,0 +1,20 @@
+.contact-form {
+  &__fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    padding: 0;
+    margin: 0 0 15px;
+    border: none;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+
+  &__submit {
+    padding: 14px 20px;
+    border-width: 2px;
+  }
+}

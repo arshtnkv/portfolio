@@ -1,71 +1,88 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding: 18px 0;
+  background-color: $color-nero2;
+  box-shadow: inset 0 -1px 0px rgba($color-crusoe, 1);
+  transform: translateY(0);
+  z-index: 200;
+  transition: transform $trans-600;
 
-  min-height: 100vh;
+  @include vp-1023 {
+    padding: 2px 0;
+  }
 
   .container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+  }
 
-    min-height: 100vh;
+  &__nav-toggle {
+    display: none;
 
-    padding-top: 60px;
-    padding-bottom: 100px;
-
-    @include vp-767 {
-      align-items: center;
-      text-align: center;
+    @include vp-1023 {
+      display: inline-block;
+      margin-left: auto;
     }
   }
 
-  &__title {
-    margin-bottom: 20px;
-    will-change: transform;
-    z-index: 29;
-  }
-
-  &__github {
-    align-self: center;
-
-    svg {
-      width: 50px;
-      height: 50px;
+  &__nav-wrapper {
+    @include vp-1023 {
+      display: none;
     }
-  }
-
-  &__nav {
-    width: 100%;
   }
 
   &__nav-list {
-    max-width: 250px;
-    width: 100%;
+    display: flex;
+
     padding: 0;
     margin: 0;
     list-style: none;
 
-    @include vp-767 {
-      max-width: 100%;
-    }
+    font-size: 20px;
+    font-weight: 700;
   }
 
   &__nav-item {
-    margin-bottom: 20px;
-    &:nth-child(2n) {
-      .btn::before {
-        inset: unset;
-        bottom: 0;
-        left: 0;
-      }
+    &:not(:first-child) {
+      margin-left: 20px;
     }
-    &:last-child {
-      margin-bottom: 0;
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+    transition: transform $trans-600;
+  }
+
+  &.is-open {
+    height: 100vh;
+
+    .header__nav-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .header__nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header__nav-item {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
   }
 }

@@ -1,0 +1,21 @@
+mixin contact-form()
+  .contact-form(data-form-validate)&attributes(attributes)
+    form(action="#", method: "GET")
+      fieldset.contact-form__fieldset
+        +custom-input({
+          inputLabel: null,
+          inputPlaceholder: "Name",
+          inputName: "user-name",
+        })(data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required)
+        +custom-input({
+          inputType: "email",
+          inputPlaceholder: "E-mail",
+          inputLabel: null,
+          inputName: "user-mail",
+        })(data-validate-type="matrix", data-matrix-limitation="digit", data-matrix="____ ______", data-message-base="Поле обязательно к заполнению", data-required)
+        +custom-textarea({
+          inputLabel: null,
+          inputPlaceholder: "Message",
+          inputName: "user-info"
+        })(data-validate-type="text")
+      +btn({text: "Contact me", type: "submit"}).btn--default.contact-form__submit(disabled)

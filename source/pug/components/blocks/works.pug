@@ -1,10 +1,11 @@
 mixin works(data)
   section#works.section.works&attributes(attributes)
-    .container
-      h2.works__title.title.title--h2.title--center.title--effect
+    .container(data-animate-block)
+      h2.works__title.title.title--h2.title--center.title--effect(data-animate-el)
         span !{data.title}
 
       .works__gallery
         each it in data.gallery
-          +card(it)
+          +card(it)(data-animate-el)
 
+      +btn({text: "All works", type: "button"}).works__gallery-btn-more.btn--default(data-btn="more", data-animate-el)

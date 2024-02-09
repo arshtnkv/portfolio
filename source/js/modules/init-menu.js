@@ -1,13 +1,13 @@
 const initMenu = () => {
-  const menu = document.querySelector('.menu');
+  const menu = document.querySelector('.header');
 
   if (!menu || document.documentElement.clientWidth > 1024) {
     return;
   }
 
-  const nav = menu.querySelector('.menu__nav');
-  const burger = nav.querySelector('.menu__nav-toggle');
-  const links = nav.querySelectorAll('.menu__nav-item a');
+  const nav = menu.querySelector('.header__nav');
+  const burger = nav.querySelector('.header__nav-toggle');
+  const links = nav.querySelectorAll('.header__nav-item a');
 
   burger.addEventListener('click', toggleMenu);
   document.addEventListener('keydown', onPopupEscPress);

@@ -2,17 +2,4 @@ mixin contact()
   section#contact.section.contact&attributes(attributes)
     .container
       h2.contact__title.title.title--h2.title--center.title--effect(data-item="contact") Contact me
-      .contact__wrapper
-        .contact__info
-          ul.contact__list.container
-            li.contact__item
-              +btn({text: "Telegram", href: "https://telegram.me/arshtnkv", isExternal: true}).btn--default
-            li.contact__item
-              +btn({text: "Whatsapp", href: "whatsapp://send?phone=79536751815", isExternal: true}).btn--default
-            li.contact__item
-              +btn({text: "Viber", href: "viber://chat?number=79536751815", isExternal: true}).btn--default
-            li.contact__item
-              +btn({text: "arshtnkv@gmail.com", href: "mailto: arshtnkv@gmail.com"}).btn--default
-
-          //- +globe()
-        +map()(data-map)
+      +contact-form()

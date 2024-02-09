@@ -4,9 +4,7 @@
   text-shadow: 0 0 0.6rem #ffe6e6, 0 0 1.5rem $color-screamin-green,
   -0.2rem 0.1rem 1rem $color-screamin-green, 0.2rem 0.1rem 1rem $color-screamin-green,
   0 -0.5rem 2rem $color-crusoe, 0 0.5rem 3rem $color-crusoe;
-  animation: shine 2s forwards, flicker 3s infinite, visy 3s forwards 3s;
-  opacity: 0;
-  visibility: hidden;
+  animation: shine 2s forwards, flicker 3s infinite;
 }
 
 .flicker {

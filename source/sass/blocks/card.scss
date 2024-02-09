@@ -1,14 +1,13 @@
 .card {
   position: relative;
-  // perspective: 1000px;
-  width: calc(33.3% - 30px);
+  width: calc(33.3% - 16px);
   padding-bottom: 33.3%;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
   box-sizing: border-box;
 
   @include vp-767 {
-    width: calc(50% - 24px);
+    width: calc(50% - 8px);
     padding-bottom: 50%;
   }
 
@@ -70,10 +69,20 @@
   }
 
   &__info p {
-    margin: 0;
+    margin: 0 0 10px;
     font-family: $ff-roboto;
     font-size: 16px;
     font-weight: 500;
+  }
+
+  &__info p:last-child {
+    margin: 0;
+  }
+
+  &__info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
   &__info-more {
@@ -117,3 +126,7 @@
   transform-origin: 0% 0%;
   animation: out-left 300ms ease 0ms 1 forwards;
 }
+
+// .card[data-hui] {
+//   width: 100%;
+// }

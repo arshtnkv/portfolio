@@ -18,18 +18,16 @@ html(lang="ru")
   body
     +preloader()
     +sprite()
-    .app
-      .wrapper(class=wrapperMods)
-        if (hasHeader)
-          +header(headerMods, currentUrl)
+    .wrapper(class=wrapperMods)
+      if (hasHeader)
+        +header(headerMods, currentUrl)
 
-        block main
+      block main
 
-        if (hasFooter)
-          +footer(footerMods)
+      if (hasFooter)
+        +footer(footerMods)
 
-    +menu()
-    +btn({iconName: "icon-two-arrow", iconWidth: 17, iconHeight: 14}).btn--up(aria-label="Кнопка наверх" data-btn-up)
+    //- +menu()
     block modals
 
     script(src="js/vendor.min.js")

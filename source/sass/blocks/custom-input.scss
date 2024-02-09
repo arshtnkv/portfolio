@@ -1,58 +1,46 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
 
   label {
     display: flex;
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
       padding: 10px;
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      font: inherit;
+      font-weight: 700;
+      color: $color-crusoe;
+      background-color: $color-transparent;
+      border: 2px solid rgba($color-crusoe, 0.8);
       outline: none;
 
       transition: border 0.3s ease;
 
-      @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
+      &::placeholder {
+        color: $color-crusoe;
+        font-weight: 700;
+        @include hover {
+          color: ($color-crusoe, 0.5);
+        }
       }
 
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+      @include hover {
+        border: 2px solid rgba($color-crusoe, 0.5);
       }
 
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+      @include focus {
+        border: 2px solid rgba($color-crusoe, 0.2);
       }
     }
-  }
 
-  &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
+    textarea {
+      min-height: 200px;
     }
   }
 
@@ -107,5 +95,13 @@
     &--valid {
       color: #15ab07;
     }
+  }
+}
+
+.custom-textarea {
+  grid-column: 1/3;
+
+  @include vp-767 {
+    grid-column: 1/2;
   }
 }

@@ -22,7 +22,7 @@
       font-size: 14px;
       font-weight: 300;
       line-height: 1;
-      opacity: 0.4;
+      color: rgba($color-snow, 0.4);
     }
 
     @include vp-767 {
@@ -43,9 +43,9 @@
     font-size: 20px;
   }
 
-  &--center {
-    text-align: center;
-  }
+  // &--center {
+  //   text-align: center;
+  // }
 
   &--effect {
     // font-family: $ff-montserrat;
