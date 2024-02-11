@@ -2,7 +2,6 @@
 .idea
 .vscode
 .nvmrc
-build
 package-lock.json
 *.ai
 *.log
