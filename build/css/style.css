@@ -1046,12 +1046,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2114,6 +2108,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   min-height: 100vh;
+  border-bottom: calc((1vw + 1vh) * 1) solid #242424;
 }
 
 .intro .container {
@@ -2491,7 +2486,7 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  gap: calc((1vw + 1vh) * 1);
   margin: 0;
 }
 

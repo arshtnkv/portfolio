@@ -6,6 +6,7 @@
   align-items: center;
 
   min-height: 100vh;
+  border-bottom: calc($index * 1) solid $color-nero2;
 
   .container {
     display: flex;

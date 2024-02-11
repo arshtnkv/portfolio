@@ -7,7 +7,7 @@
   &__gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: calc($index * 1);
     margin: 0;
 
     @include vp-767 {
