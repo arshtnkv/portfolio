@@ -18,6 +18,8 @@
     @include vp-767 {
       align-items: center;
       text-align: center;
+      padding-top: calc($index * 5);
+      padding-bottom: calc($index * 10);
     }
   }
 
@@ -28,6 +30,10 @@
 
   &__github {
     align-self: flex-end;
+
+    @include vp-767 {
+      align-self: center;
+    }
 
     svg {
       width: 50px;

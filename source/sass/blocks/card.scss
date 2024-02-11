@@ -1,19 +1,21 @@
 .card {
   position: relative;
-  width: calc(33.3% - 16px);
+  width: 100%;
   padding-bottom: 33.3%;
+  border: calc($index * 1) solid $color-nero2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
   box-sizing: border-box;
 
   @include vp-767 {
-    width: calc(50% - 8px);
     padding-bottom: 50%;
   }
 
   @include vp-599 {
     width: 100%;
-    padding-bottom: 100%;
+    padding-bottom: 50%;
   }
 
   &__link {
@@ -28,6 +30,8 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 
     &::before {
       content: "";
@@ -36,13 +40,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba($color-default-black, .8);
+      background-color: rgba($color-default-black, .5);
     }
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
       z-index: -1;
     }
   }
@@ -60,6 +64,7 @@
     padding: 20px;
     background-color: rgba($color-crusoe, .5);
     transform: rotate3d(1, 0, 0, 90deg);
+    transition: transform $trans-600;
     pointer-events: none;
     text-align: center;
   }
@@ -92,41 +97,12 @@
     text-transform: lowercase;
     letter-spacing: 1.5px;
   }
-}
 
-.in-top .card__info {
-  transform-origin: 50% 0%;
-  animation: in-top 300ms ease 0ms 1 forwards;
-}
-.in-right .card__info {
-  transform-origin: 100% 0%;
-  animation: in-right 300ms ease 0ms 1 forwards;
-}
-.in-bottom .card__info {
-  transform-origin: 50% 100%;
-  animation: in-bottom 300ms ease 0ms 1 forwards;
-}
-.in-left .card__info {
-  transform-origin: 0% 0%;
-  animation: in-left 300ms ease 0ms 1 forwards;
-}
-.out-top .card__info {
-  transform-origin: 50% 0%;
-  animation: out-top 300ms ease 0ms 1 forwards;
-}
-.out-right .card__info {
-  transform-origin: 100% 50%;
-  animation: out-right 300ms ease 0ms 1 forwards;
-}
-.out-bottom .card__info {
-  transform-origin: 50% 100%;
-  animation: out-bottom 300ms ease 0ms 1 forwards;
-}
-.out-left .card__info {
-  transform-origin: 0% 0%;
-  animation: out-left 300ms ease 0ms 1 forwards;
-}
+  @include hover-focus {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
-// .card[data-hui] {
-//   width: 100%;
-// }
+    .card__info {
+      transform: rotate3d(1, 0, 0, 0);
+    }
+  }
+}

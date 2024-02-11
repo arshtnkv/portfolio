@@ -1,4 +1,5 @@
 .title {
+  position: relative;
   margin: 0;
   font-family: $ff-roboto;
   font-weight: 700;
@@ -7,6 +8,8 @@
   z-index: 20;
 
   &--h1 {
+    padding-right: 10px;
+    margin-bottom: 8rem;
     font-size: calc($index * 3.5);
     line-height: 1.1;
 
@@ -32,7 +35,32 @@
   }
 
   &--h2 {
+    padding-top: calc($index * 6.5);
+    padding-left: calc($index * 6);
     font-size: calc($index * 3);
+
+    &::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: calc($index * 7);
+      line-height: 1;
+      letter-spacing: -.045em;
+      color: $color-nero2;
+      // border-bottom: calc($index * .2) solid $color-crusoe;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: calc($index * 1.6);
+      left: calc($index * 0.5);
+      width: calc($index * 4);
+      height: 2px;
+      background-color: $color-crusoe;
+    }
   }
 
   &--h3 {
@@ -42,22 +70,4 @@
   &--h4 {
     font-size: 20px;
   }
-
-  // &--center {
-  //   text-align: center;
-  // }
-
-  &--effect {
-    // font-family: $ff-montserrat;
-    // font-weight: 800;
-    color: $color-nero2;
-    text-shadow: 0 13.36px 8.896px #51966b,0 -2px 1px #195931;
-  }
-
-  // &--letterpress {
-  //   color: #fefefe;
-  //   text-shadow: #e7e7e7 3px 5px 0,
-  //               #999 4px 6px 3px,
-  //               #ccc 8px 11px 10px;
-  // }
 }

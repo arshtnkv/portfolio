@@ -1,4 +1,9 @@
 .contact-form {
+  padding: 35px;
+  background-color: $color-nero2;
+  border-radius: 50px;
+  overflow: hidden;
+
   &__fieldset {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

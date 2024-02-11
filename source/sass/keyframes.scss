@@ -180,3 +180,28 @@
     opacity: 1;
   }
 }
+
+@keyframes github {
+  0% {
+    transform: translateX(-3000px) rotate(-3000deg);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0);
+  }
+}
+
+@keyframes up-to-down {
+  0% {
+    transform: translateY(-1500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+

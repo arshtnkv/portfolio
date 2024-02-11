@@ -14,12 +14,12 @@ const initMoreItemOnclick = () => {
 
   const breakpointChecker = () => {
     if (DESCTOP_WIDTH.matches) {
-      cardRange = 6;
+      cardRange = 4;
       toggleCards();
       showMore();
     }
     if (MOBILE_WIDTH.matches) {
-      cardRange = 3;
+      cardRange = 2;
       toggleCards();
       showMore();
     }

@@ -1,12 +1,12 @@
 mixin card(data)
-  article(class=`card ${data.category}`)&attributes(attributes)
+  article.card&attributes(attributes)
     a(class="card__link" href=data.href target="blank")
       .card__img
         +picture(data.img.path, data.img.name, data.img.format, data.img.width, data.img.height, data.img.altText)
     .card__info
       h4.title.title--h4 !{data.info.title}
       div
-        h3.title.title--h3 !{data.info.subtitle}
+        h3.title.title--h3.title--center !{data.info.subtitle}
         p Использую:
         ul
           li <b>HTML</b>&nbsp;/ Pug&nbsp;/ BEM

@@ -5,26 +5,25 @@
   }
 
   &__gallery {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 24px;
-    margin: 0 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0;
 
     @include vp-767 {
-      column-gap: 16px;
+      grid-template-columns: 1fr;
+      column-gap: 0;
       row-gap: 16px;
     }
 
     @include vp-599 {
-      column-gap: 0;
-      row-gap: 16px;
     }
   }
 
   &__gallery-btn-more {
     max-width: 250px;
     padding: 14px 20px;
+    margin-top: calc($index * 3);
     text-align: center;
 
     @include vp-767 {

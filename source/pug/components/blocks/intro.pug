@@ -1,20 +1,20 @@
 mixin intro()
   section.section.intro#intro&attributes(attributes)
-    canvas#sphere
+    canvas#sphere.anime.anime--up-to-down
     .container
-      .intro__github
+      .intro__github.anime.anime--github
         +btn({href: "https://github.com/arshtnkv?tab=repositories", iconName: "github", iconWidth: 50, iconHeight: 50, isExternal: true})#btn-github.btn--hover-scale
-      h1.intro__title.title.title--h1(aria-label="Hi, i'm Arshtnkv, web developer")
-        span.crushed-text
+      h1.intro__title.title.title--h1.anime.anime--left-to-right(aria-label="Hi, i'm Arshtnkv, web developer")
+        span
           span H
           span i
           span ,
         br
-        span.crushed-text
+        span
           span I
           span '
           span m
-        span.crushed-text.sign
+        span.sign
           span F
           span.fast-flicker r
           span.flicker o
@@ -34,7 +34,7 @@ mixin intro()
           span p
           span e
           span r
-      ul.intro__links
+      ul.intro__links.anime.anime--right-to-left
         li.intro__links-item
           +btn({text: "Resume", href: "https://drive.google.com/file/d/1KqmK2uDIgbXw-l6uQoEtdRDoI_SVMbdK/view?usp=share_link", isExternal: true})#btn-cv.btn--default
         li.intro__links-item

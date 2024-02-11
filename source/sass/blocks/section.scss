@@ -1,8 +1,9 @@
 .section {
   position: relative;
+  overflow: hidden;
 
   .container {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
 
     @include vp-1023 {
