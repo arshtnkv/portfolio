@@ -1,4 +1,5 @@
 .works {
+  border-bottom: calc($index * 1) solid $color-nero2;
 
   &__title {
     margin-bottom: 50px;

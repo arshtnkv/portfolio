@@ -2477,6 +2477,10 @@ button,
   transform: rotate3d(1, 0, 0, 0);
 }
 
+.works {
+  border-bottom: calc((1vw + 1vh) * 1) solid #242424;
+}
+
 .works__title {
   margin-bottom: 50px;
 }
