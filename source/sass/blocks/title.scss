@@ -6,6 +6,7 @@
   line-height: 1;
   color: inherit;
   z-index: 20;
+  user-select: none;
 
   &--h1 {
     padding-right: 10px;
@@ -37,6 +38,7 @@
   &--h2 {
     padding-top: calc($index * 6.5);
     padding-left: calc($index * 6);
+    margin-bottom: calc($index * 5);
     font-size: calc($index * 3);
 
     &::before {
@@ -59,15 +61,23 @@
       left: calc($index * 0.5);
       width: calc($index * 4);
       height: 2px;
-      background-color: $color-crusoe;
+      background-color: $color-screamin-green;
     }
   }
 
   &--h3 {
-    font-size: 30px;
+    font-size: calc($index * 2.5);
   }
 
   &--h4 {
-    font-size: 20px;
+    font-size: calc($index * 2);
+  }
+
+  &--h5 {
+    font-size: calc($index * 1.5);
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
   }
 }

@@ -34,8 +34,5 @@ mixin intro()
           span p
           span e
           span r
-      ul.intro__links.anime.anime--right-to-left
-        li.intro__links-item
-          +btn({text: "Resume", href: "https://drive.google.com/file/d/1KqmK2uDIgbXw-l6uQoEtdRDoI_SVMbdK/view?usp=share_link", isExternal: true})#btn-cv.btn--default
-        li.intro__links-item
-          +btn({text: "My works!", href: "#works"})#btn-work.btn--default(data-btn="works" data-navigation-link)
+      .intro__link.anime.anime--right-to-left
+        +btn({text: "My works!", href: "#works"})#btn-work.btn--default(data-btn="works" data-navigation-link)

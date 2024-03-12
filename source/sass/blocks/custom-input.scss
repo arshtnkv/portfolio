@@ -15,28 +15,28 @@
 
       font: inherit;
       font-weight: 700;
-      color: $color-crusoe;
+      color: $color-screamin-green;
       background-color: $color-transparent;
-      border: 2px solid rgba($color-crusoe, 0.8);
-      border-radius: 10px;
+      border: 2px solid rgba($color-screamin-green, 0.8);
+      // border-radius: 10px;
       outline: none;
 
       transition: border 0.3s ease;
 
       &::placeholder {
-        color: $color-crusoe;
+        color: $color-screamin-green;
         font-weight: 700;
         @include hover {
-          color: ($color-crusoe, 0.5);
+          color: ($color-screamin-green, 0.5);
         }
       }
 
       @include hover {
-        border: 2px solid rgba($color-crusoe, 0.5);
+        border: 2px solid rgba($color-screamin-green, 0.5);
       }
 
       @include focus {
-        border: 2px solid rgba($color-crusoe, 0.2);
+        border: 2px solid rgba($color-screamin-green, 0.2);
       }
     }
 

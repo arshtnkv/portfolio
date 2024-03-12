@@ -6,7 +6,7 @@
   font-family: $ff-roboto;
   color: inherit;
   border: none;
-  border-radius: 10px;
+  // border-radius: 10px;
   background-color: transparent;
   user-select: none;
   transition: opacity $trans-default;
@@ -14,16 +14,16 @@
   &--default {
     position: relative;
     justify-content: center;
-    // max-width: 230px;
     width: 100%;
     padding: 11px 20px;
+    // text-transform: uppercase;
     text-align: center;
 
     font-weight: 700;
 
-    color: $color-crusoe;
+    color: $color-screamin-green;
     background-color: $color-nero;
-    border: 2px solid $color-crusoe;
+    border: 2px solid $color-screamin-green;
 
     overflow: hidden;
     z-index: 5;
@@ -36,7 +36,7 @@
       right: 0;
       width: 4px;
       height: 4px;
-      background-color: $color-crusoe;
+      background-color: $color-screamin-green;
     }
 
     &::after {
@@ -45,15 +45,15 @@
       top: 0;
       left: -5%;
       width: 0;
-      height: 100%;
-      background-color: $color-crusoe;
+      height: 110%;
+      background-color: $color-screamin-green;
       transform: skewX(-10deg);
       transition: width $trans-default;
       z-index: -1;
     }
 
     @include hover-focus {
-      color: $color-default-white;
+      color: $color-nero2;
       transition: color $trans-default;
 
       &::after {
@@ -81,7 +81,7 @@
       // letter-spacing: 1.5px;
       // text-transform: uppercase;
 
-      color: $color-crusoe;
+      color: $color-screamin-green;
       overflow: hidden;
       transition: width $trans-default;
     }
@@ -95,12 +95,12 @@
     }
 
     @include active {
-      color: $color-crusoe;
+      color: $color-screamin-green;
     }
 
     &.is-active {
       pointer-events: none;
-      color: $color-crusoe;
+      color: $color-screamin-green;
     }
   }
 
@@ -128,7 +128,7 @@
       left: -4px;
       width: 28px;
       height: 28px;
-      border: 1px solid $color-crusoe;
+      border: 1px solid $color-screamin-green;
       opacity: 0;
       border-radius: 50%;
       transition: opacity $trans-default;
@@ -168,7 +168,7 @@
       position: absolute;
       width: 10px;
       height: 10px;
-      background-color: $color-crusoe;
+      background-color: $color-screamin-green;
       display: block;
       border-radius: 50%;
 
@@ -259,9 +259,9 @@
     // }
   }
 
-  &--radiius-50 {
-    border-radius: 50%;
-  }
+  // &--radiius-50 {
+  //   border-radius: 50%;
+  // }
 
   &:disabled {
     opacity: 0.5;

@@ -18,7 +18,7 @@
   }
 
   &--right-to-left {
-    transform: translateX(1000px);
+    transform: translateX(100%);
     transition: transform $trans-600;
 
     &.active {

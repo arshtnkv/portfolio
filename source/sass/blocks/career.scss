@@ -1,0 +1,110 @@
+.career {
+  &__title {
+    margin-bottom: calc($index * 4);
+  }
+
+  &__list {
+    position: relative;
+    padding: 0 0 0 60px;
+    margin: 0;
+    list-style: none;
+
+    @include vp-767 {
+      padding: 0 0 0 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 3px;
+      width: 1px;
+      height: 100%;
+      background-color: $color-screamin-green;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -60px;
+      width: 8px;
+      height: 8px;
+      background-color: $color-screamin-green;
+      border-radius: 50%;
+
+      @include vp-767 {
+        left: -20px;
+      }
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: calc($index * 2.5);
+  }
+
+  &__header {
+    margin-bottom: calc($index * 1.2);
+    user-select: none;
+  }
+
+  &__header .title--h4 {
+    margin-bottom: calc($index * 0.5);
+  }
+
+  &__header .title--h5 {
+    margin-bottom: calc($index * 0.5);
+  }
+
+  &__timeframe {
+    margin: 0;
+    font-size: 14px;
+    color: $color-smoky;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    @include vp-767 {
+      font-size: 10px;
+    }
+  }
+
+  &__description p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description li {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 10px;
+      height: 1px;
+      background-color: $color-screamin-green;
+    }
+
+    &::selection {
+      background-color: $color-crusoe;
+    }
+  }
+}

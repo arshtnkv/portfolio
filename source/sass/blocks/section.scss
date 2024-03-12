@@ -2,9 +2,9 @@
   position: relative;
   overflow: hidden;
 
-  .container {
+  &> .container {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 160px;
 
     @include vp-1023 {
       padding-top: 75px;
