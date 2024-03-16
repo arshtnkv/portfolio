@@ -40,5 +40,13 @@
     @include vp-767 {
       max-width: 100%;
     }
+
+    &.anime--bottom-to-up {
+      transform: translateY(100px);
+
+      &.active {
+        transform: translateY(0);
+      }
+    }
   }
 }
