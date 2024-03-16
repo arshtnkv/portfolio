@@ -36,4 +36,14 @@
       opacity: 1;
     }
   }
+
+  &--bottom-to-up {
+    transform: translateY(200px);
+    transition: transform $trans-600;
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
