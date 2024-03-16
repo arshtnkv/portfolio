@@ -42,10 +42,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -3px;
       left: -5%;
       width: 0;
-      height: 110%;
+      height: 115%;
       background-color: $color-screamin-green;
       transform: skewX(-10deg);
       transition: width $trans-default;

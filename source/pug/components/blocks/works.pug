@@ -7,5 +7,5 @@ mixin works(data)
       .works__gallery
         each it in data.gallery
           +card(it).anime.anime--bottom-to-up
-
-      +btn({text: "All works", type: "button"}).works__gallery-btn-more.btn--default(data-btn="more")
+      .works__gallery-btn-more
+        +btn({text: "More works", type: "button"}).btn--default(data-btn="more")
