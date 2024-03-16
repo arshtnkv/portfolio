@@ -1875,6 +1875,23 @@ button,
   opacity: 1;
 }
 
+.anime--bottom-to-up {
+  -webkit-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.anime--bottom-to-up.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .title {
   position: relative;
   margin: 0;
@@ -2630,9 +2647,9 @@ button,
 }
 
 .card__title {
-  -webkit-transform: translateX(-500px);
-  -ms-transform: translateX(-500px);
-  transform: translateX(-500px);
+  -webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  transform: translateX(-120%);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -2723,6 +2740,7 @@ button,
 
 .works .container {
   padding-bottom: 0;
+  padding-bottom: calc((1vw + 1vh) * 3);
 }
 
 .works::before {
@@ -2749,7 +2767,6 @@ button,
   max-width: 250px;
   padding: 14px 20px;
   margin-top: calc((1vw + 1vh) * 3);
-  margin-bottom: calc((1vw + 1vh) * 3);
   text-align: center;
 }
 

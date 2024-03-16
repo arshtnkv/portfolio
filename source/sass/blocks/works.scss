@@ -4,6 +4,7 @@
 
   .container {
     padding-bottom: 0;
+    padding-bottom: calc($index * 3);
   }
 
   &::before {
@@ -35,7 +36,7 @@
     max-width: 250px;
     padding: 14px 20px;
     margin-top: calc($index * 3);
-    margin-bottom: calc($index * 3);
+
     text-align: center;
 
     @include vp-767 {
