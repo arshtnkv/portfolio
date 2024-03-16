@@ -1,1 +1,25 @@
-<svg width="400px" height="150px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-4 -4 60 48"><g><circle fill="#195931" cx="-2" cy="-2" r="1"/><circle fill="#195931" cx="10" cy="-2" r="1"/><circle fill="#195931" cx="22" cy="-2" r="1"/><circle fill="#195931" cx="34" cy="-2" r="1"/><circle fill="#195931" cx="46" cy="-2" r="1"/><circle fill="#195931" cx="-2" cy="10" r="1"/><circle fill="#195931" cx="10" cy="10" r="1"/><circle fill="#195931" cx="22" cy="10" r="1"/><circle fill="#195931" cx="34" cy="10" r="1"/><circle fill="#195931" cx="46" cy="10" r="1"/><circle fill="#195931" cx="-2" cy="22" r="1"/><circle fill="#195931" cx="10" cy="22" r="1"/><circle fill="#195931" cx="22" cy="22" r="1"/><circle fill="#195931" cx="34" cy="22" r="1"/><circle fill="#195931" cx="46" cy="22" r="1"/><circle fill="#195931" cx="-2" cy="34" r="1"/><circle fill="#195931" cx="10" cy="34" r="1"/><circle fill="#195931" cx="22" cy="34" r="1"/><circle fill="#195931" cx="34" cy="34" r="1"/><circle fill="#195931" cx="46" cy="34" r="1"/></g></svg>
+<svg width="400px" height="150px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="-4 -4 60 48">
+<g>
+	<circle fill="#195931" cx="-2" cy="-2" r="1"/>
+	<circle fill="#195931" cx="10" cy="-2" r="1"/>
+	<circle fill="#195931" cx="22" cy="-2" r="1"/>
+	<circle fill="#195931" cx="34" cy="-2" r="1"/>
+	<circle fill="#195931" cx="46" cy="-2" r="1"/>
+	<circle fill="#195931" cx="-2" cy="10" r="1"/>
+	<circle fill="#195931" cx="10" cy="10" r="1"/>
+	<circle fill="#195931" cx="22" cy="10" r="1"/>
+	<circle fill="#195931" cx="34" cy="10" r="1"/>
+	<circle fill="#195931" cx="46" cy="10" r="1"/>
+	<circle fill="#195931" cx="-2" cy="22" r="1"/>
+	<circle fill="#195931" cx="10" cy="22" r="1"/>
+	<circle fill="#195931" cx="22" cy="22" r="1"/>
+	<circle fill="#195931" cx="34" cy="22" r="1"/>
+	<circle fill="#195931" cx="46" cy="22" r="1"/>
+	<circle fill="#195931" cx="-2" cy="34" r="1"/>
+	<circle fill="#195931" cx="10" cy="34" r="1"/>
+	<circle fill="#195931" cx="22" cy="34" r="1"/>
+	<circle fill="#195931" cx="34" cy="34" r="1"/>
+	<circle fill="#195931" cx="46" cy="34" r="1"/>
+</g>
+</svg>

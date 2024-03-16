@@ -1544,10 +1544,10 @@ button,
 .btn--default::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -3px;
   left: -5%;
   width: 0;
-  height: 110%;
+  height: 115%;
   background-color: #46ff8c;
   -webkit-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
@@ -2765,13 +2765,14 @@ button,
 
 .works__gallery-btn-more {
   max-width: 250px;
-  padding: 14px 20px;
+  margin: 0 auto;
   margin-top: calc((1vw + 1vh) * 3);
-  text-align: center;
 }
 
 .contact-form {
-  padding: 35px;
+  max-width: 1000px;
+  padding: 65px 35px;
+  margin: 0 auto;
   background-color: #242424;
   overflow: hidden;
 }
