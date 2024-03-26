@@ -1,38 +1,9 @@
 mixin intro()
   section.section.intro#intro&attributes(attributes)
-    canvas#sphere.anime.anime--up-to-down
     .container
       .intro__github.anime.anime--github
         +btn({href: "https://github.com/arshtnkv?tab=repositories", iconName: "github", iconWidth: 50, iconHeight: 50, isExternal: true})#btn-github.btn--hover-scale
-      h1.intro__title.title.title--h1.anime.anime--left-to-right(aria-label="Hi, i'm Arshtnkv, web developer")
-        span
-          span H
-          span i
-          span ,
-        br
-        span
-          span I
-          span '
-          span m
-        span.sign
-          span F
-          span.fast-flicker r
-          span.flicker o
-          span n
-          span.flicker t
-          span e
-          span.fast-flicker n
-          span d
-        br
-        strong.crushed-text.box
-          span d
-          span e
-          span v
-          span e
-          span l
-          span o
-          span p
-          span e
-          span r
+      h1.intro__title.title.title--h1.anime.anime--left-to-right(aria-label="Hi, i'm Arshtnkv, web developer") Привет, я фронтенд разработчик
+
       .intro__link.anime.anime--right-to-left
-        +btn({text: "My works!", href: "#works"})#btn-work.btn--default(data-btn="works" data-navigation-link)
+        +btn({text: "Обо мне", href: "#about"})#btn-work.btn--default(data-navigation-link)
