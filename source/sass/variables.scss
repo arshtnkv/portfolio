@@ -1,21 +1,19 @@
 $color-default-black:                                     #000000;
-$color-default-white:                                     #ffffff;
 $color-transparent:                        rgba(255, 255, 255, 0);
 
 $color-nero:                                              #1d1d1d;
 $color-nero2:                                             #242424;
-$color-snow:                                              #fafafa;
+$color-eclipse:                                           #393939;
+$color-willow-brook:                                      #E3E7D3;
 $color-smoky:                                             #5b5b5c;
-
-$color-screamin-green:                                    #46ff8c;
-$color-ocean-green:                                       #51966b;
-$color-crusoe:                                            #195931;
 
 $fz-default:                                                   20px;
 $index:                                             calc(1vw + 1vh);
 
 $ff-roboto:                            "Roboto", "Arial", sans-serif;
 $ff-montserrat:                    "Montserrat", "Arial", sans-serif;
+$ff-bangers:                                    "Bangers", system-ui;
+$ff-chlorinar:                                "Chlorinar", system-ui;
 
 $tf-default:                                                    ease;
 $trans-default:                                     0.3s $tf-default;

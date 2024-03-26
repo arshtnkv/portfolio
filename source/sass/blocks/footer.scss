@@ -1,29 +1,33 @@
 .footer {
-  background-color: $color-nero2;
+  background-color: $color-eclipse;
 
   .container {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @include vp-767 {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+    }
   }
 
   &__copyright {
     display: flex;
-    align-self: flex-end;
-    color: $color-screamin-green;
+    flex-direction: column;
+    align-items: flex-end;
+    // align-self: flex-end;
 
     font-family: $ff-roboto;
     font-size: 13px;
     font-weight: 400;
     user-select: none;
 
-    span {
-      margin: 0 7px 0 0;
-    }
-
-    a {
-      margin: 0 7px 0 0;
+    @include vp-767 {
+      align-self: center;
+      align-items: center;
     }
   }
 
@@ -32,7 +36,7 @@
     svg {
       width: 20px;
       height: 20px;
-      color: $color-screamin-green;
+      color: $color-willow-brook;
     }
   }
 }

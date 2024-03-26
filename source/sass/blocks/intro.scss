@@ -5,13 +5,12 @@
   justify-content: center;
   align-items: center;
 
-  min-height: 100vh;
-  border-bottom: calc($index * 1) solid $color-nero2;
+  // min-height: 100vh;
 
   .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 
     min-height: 100vh;
@@ -25,17 +24,17 @@
   }
 
   &__title {
+    max-width: calc($index * 40);
     margin-bottom: 20px;
+    text-align: center;
     z-index: 29;
+
+    @include vp-767 {
+      max-width: calc($index * 30);
+    }
   }
 
   &__github {
-    align-self: flex-end;
-
-    @include vp-767 {
-      align-self: center;
-    }
-
     svg {
       width: 50px;
       height: 50px;

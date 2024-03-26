@@ -12,12 +12,11 @@
     position: relative;
     top: 50%;
     left: 50%;
-    /*   transform: translate(-50%, -50%); */
     width: 150px;
     height: 150px;
     margin: -75px 0 0 -75px;
     border: 5px solid transparent;
-    border-top-color: $color-screamin-green;
+    border-top-color: $color-nero2;
     border-radius: 100%;
     animation: spin 2s linear infinite;
     z-index: 1001;
@@ -30,7 +29,7 @@
       right: 4px;
       bottom: 4px;
       border: 5px solid transparent;
-      border-top-color: $color-ocean-green;
+      border-top-color: $color-eclipse;
       border-radius: 100%;
       animation: spin 3s linear infinite;
     }
@@ -43,7 +42,7 @@
       right: 14px;
       bottom: 14px;
       border: 5px solid transparent;
-      border-top-color: $color-crusoe;
+      border-top-color: $color-nero;
       border-radius: 100%;
       animation: spin 1.5s linear infinite;
     }

@@ -1,7 +1,7 @@
 .title {
   position: relative;
   margin: 0;
-  font-family: $ff-roboto;
+  font-family: $ff-montserrat;
   font-weight: 700;
   line-height: 1;
   color: inherit;
@@ -9,25 +9,10 @@
   user-select: none;
 
   &--h1 {
-    padding-right: 10px;
+    // padding-right: 10px;
     margin-bottom: 8rem;
     font-size: calc($index * 3.5);
     line-height: 1.1;
-
-    .sign {
-      margin-left: 20px;
-    }
-
-    strong {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1;
-      color: rgba($color-snow, 0.4);
-    }
 
     @include vp-767 {
       font-size: 34px;
@@ -50,7 +35,6 @@
       line-height: 1;
       letter-spacing: -.045em;
       color: $color-nero2;
-      // border-bottom: calc($index * .2) solid $color-crusoe;
       z-index: -1;
     }
 
@@ -61,7 +45,7 @@
       left: calc($index * 0.5);
       width: calc($index * 4);
       height: 2px;
-      background-color: $color-screamin-green;
+      background-color: $color-nero2;
     }
   }
 
@@ -71,9 +55,11 @@
 
   &--h4 {
     font-size: calc($index * 2);
+    font-weight: 600;
   }
 
   &--h5 {
+    font-weight: 400;
     font-size: calc($index * 1.5);
   }
 

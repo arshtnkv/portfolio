@@ -6,7 +6,6 @@
   font-family: $ff-roboto;
   color: inherit;
   border: none;
-  // border-radius: 10px;
   background-color: transparent;
   user-select: none;
   transition: opacity $trans-default;
@@ -16,14 +15,12 @@
     justify-content: center;
     width: 100%;
     padding: 11px 20px;
-    // text-transform: uppercase;
     text-align: center;
 
     font-weight: 700;
 
-    color: $color-screamin-green;
     background-color: $color-nero;
-    border: 2px solid $color-screamin-green;
+    border: 2px solid $color-nero2;
 
     overflow: hidden;
     z-index: 5;
@@ -36,7 +33,7 @@
       right: 0;
       width: 4px;
       height: 4px;
-      background-color: $color-screamin-green;
+      background-color: $color-nero2;
     }
 
     &::after {
@@ -46,14 +43,14 @@
       left: -5%;
       width: 0;
       height: 115%;
-      background-color: $color-screamin-green;
+      background-color: $color-nero2;
       transform: skewX(-10deg);
       transition: width $trans-default;
       z-index: -1;
     }
 
     @include hover-focus {
-      color: $color-nero2;
+      // color: $color-nero2;
       transition: color $trans-default;
 
       &::after {
@@ -78,29 +75,31 @@
 
       font: inherit;
       font-weight: 700;
-      // letter-spacing: 1.5px;
-      // text-transform: uppercase;
 
-      color: $color-screamin-green;
+      color: $color-nero;
       overflow: hidden;
       transition: width $trans-default;
     }
 
     @include hover-focus {
-      color: $color-nero2;
-      // transition: color $trans-default;
+      color: $color-nero;
+
       &::before {
         width: 100%;
       }
     }
 
     @include active {
-      color: $color-screamin-green;
+      color: $color-nero;
     }
 
     &.is-active {
       pointer-events: none;
-      color: $color-screamin-green;
+      color: $color-nero;
+
+      &::before {
+        width: 100%;
+      }
     }
   }
 
@@ -128,7 +127,7 @@
       left: -4px;
       width: 28px;
       height: 28px;
-      border: 1px solid $color-screamin-green;
+      border: 1px solid $color-willow-brook;
       opacity: 0;
       border-radius: 50%;
       transition: opacity $trans-default;
@@ -168,7 +167,7 @@
       position: absolute;
       width: 10px;
       height: 10px;
-      background-color: $color-screamin-green;
+      background-color: $color-willow-brook;
       display: block;
       border-radius: 50%;
 

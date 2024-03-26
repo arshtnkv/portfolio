@@ -17,8 +17,8 @@ html {
   font-weight: 300;
   font-size: $fz-default;
   line-height: 1.5;
-  font-family: $ff-montserrat;
-  color: $color-snow;
+  font-family: $ff-roboto;
+  color: $color-willow-brook;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,18 +45,18 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $color-crusoe;
-    outline: 1px solid $color-ocean-green;
+    background-color: rgba($color-nero2, 0.9);
+    outline: 1px solid $color-nero;
   }
 }
 
 a {
-  color: $color-default-white;
+  color: $color-willow-brook;
   text-decoration: none;
 }
 
 p::selection {
-  background-color: $color-crusoe;
+  background-color: $color-eclipse;
 }
 
 img,
@@ -71,7 +71,7 @@ textarea {
 }
 
 input:-webkit-autofill {
-  box-shadow: inset 0 0 0 1000px $color-default-white;
+  box-shadow: inset 0 0 0 1000px $color-willow-brook;
 
   -webkit-text-fill-color: $color-default-black;
 }

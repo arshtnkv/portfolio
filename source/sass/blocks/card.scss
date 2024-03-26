@@ -19,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($color-default-black, 0.9);
+    background-color: rgba($color-default-black, 1);
     transition: opacity $trans-default;
     z-index: 1;
     opacity: 0;
@@ -54,7 +54,6 @@
     width: 100%;
     height: 100%;
     padding: 45px;
-    color: $color-screamin-green;
     transition: transform $trans-default;
     z-index: 1;
   }
@@ -97,7 +96,7 @@
       left: -45px;
       width: 45px;
       height: 2px;
-      background-color: $color-screamin-green;
+      background-color: $color-nero2;
     }
 
     .btn--default {
