@@ -1,4 +1,4 @@
-const animeTitle = () => {
+const anime = () => {
   // Intersection Observer API
   // настройки
   let options = {
@@ -30,4 +30,4 @@ const animeTitle = () => {
   });
 };
 
-export {animeTitle};
+export {anime};

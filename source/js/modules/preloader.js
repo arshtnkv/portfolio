@@ -1,4 +1,4 @@
-import {animeTitle} from './init-anime';
+import {anime} from './init-anime';
 
 const initPreloader = () => {
   const preloader = document.querySelector('#preloader');
@@ -9,7 +9,7 @@ const initPreloader = () => {
 
   setTimeout(function () {
     preloader.remove();
-    animeTitle();
+    anime();
   }, 1000);
 
   setTimeout(() => {
