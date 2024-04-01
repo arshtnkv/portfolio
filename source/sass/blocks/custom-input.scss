@@ -17,7 +17,7 @@
       font-weight: 700;
       color: rgba($color-willow-brook, 0.7);
       background-color: $color-transparent;
-      border: 2px solid rgba($color-nero2, 0.8);
+      border: 2px solid rgba($color-eclipse, 0.8);
       outline: none;
 
       transition: border 0.3s ease;
@@ -31,11 +31,11 @@
       }
 
       @include hover {
-        border: 2px solid rgba($color-willow-brook, 0.5);
+        border: 2px solid rgba($color-eclipse, 0.5);
       }
 
       @include focus {
-        border: 2px solid rgba($color-willow-brook, 0.2);
+        border: 2px solid rgba($color-eclipse, 0.2);
       }
     }
 

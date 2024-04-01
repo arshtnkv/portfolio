@@ -891,7 +891,7 @@ button,
   font-weight: 700;
   color: rgba(227, 231, 211, 0.7);
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid rgba(36, 36, 36, 0.8);
+  border: 2px solid rgba(57, 57, 57, 0.8);
   outline: none;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -941,7 +941,7 @@ button,
 .custom-input label textarea.focus-visible:focus,
 .custom-textarea label input.focus-visible:focus,
 .custom-textarea label textarea.focus-visible:focus {
-  border: 2px solid rgba(227, 231, 211, 0.2);
+  border: 2px solid rgba(57, 57, 57, 0.2);
 }
 
 .custom-input label textarea,
@@ -1157,7 +1157,7 @@ button,
   text-align: center;
   font-weight: 700;
   background-color: #1d1d1d;
-  border: 2px solid #242424;
+  border: 2px solid #393939;
   overflow: hidden;
   z-index: 5;
   -webkit-transition: color 0.3s ease;
@@ -1171,7 +1171,7 @@ button,
   right: 0;
   width: 4px;
   height: 4px;
-  background-color: #242424;
+  background-color: #393939;
 }
 
 .btn--default::after {
@@ -1181,7 +1181,7 @@ button,
   left: -5%;
   width: 0;
   height: 115%;
-  background-color: #242424;
+  background-color: #393939;
   -webkit-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
   transform: skewX(-10deg);
@@ -1802,7 +1802,7 @@ button,
   left: 3px;
   width: 1px;
   height: 100%;
-  background-color: #242424;
+  background-color: #393939;
 }
 
 .career__item {
@@ -1816,7 +1816,7 @@ button,
   left: -60px;
   width: 8px;
   height: 8px;
-  background-color: #393939;
+  background-color: #E3E7D3;
   border-radius: 50%;
 }
 
@@ -2690,7 +2690,7 @@ button,
   .custom-input label textarea:hover:not(.focus-visible),
   .custom-textarea label input:hover:not(.focus-visible),
   .custom-textarea label textarea:hover:not(.focus-visible) {
-    border: 2px solid rgba(227, 231, 211, 0.5);
+    border: 2px solid rgba(57, 57, 57, 0.5);
   }
 
   .btn--default:hover:not(.focus-visible) {

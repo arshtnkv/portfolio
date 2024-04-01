@@ -20,7 +20,7 @@
     font-weight: 700;
 
     background-color: $color-nero;
-    border: 2px solid $color-nero2;
+    border: 2px solid $color-eclipse;
 
     overflow: hidden;
     z-index: 5;
@@ -33,7 +33,7 @@
       right: 0;
       width: 4px;
       height: 4px;
-      background-color: $color-nero2;
+      background-color: $color-eclipse;
     }
 
     &::after {
@@ -43,7 +43,7 @@
       left: -5%;
       width: 0;
       height: 115%;
-      background-color: $color-nero2;
+      background-color: $color-eclipse;
       transform: skewX(-10deg);
       transition: width $trans-default;
       z-index: -1;
