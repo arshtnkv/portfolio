@@ -1556,7 +1556,7 @@ button,
   left: calc((1vw + 1vh) * 0.5);
   width: calc((1vw + 1vh) * 4);
   height: 2px;
-  background-color: #242424;
+  background-color: #E3E7D3;
 }
 
 .title--h3 {
@@ -2360,7 +2360,7 @@ button,
 
 .contact-form {
   max-width: 1200px;
-  padding: 65px 35px;
+  padding: 65px 0;
   margin: 0 auto;
   overflow: hidden;
 }
