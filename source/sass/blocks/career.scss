@@ -54,6 +54,15 @@
 
   &__header .title--h4 {
     margin-bottom: calc($index * 0.5);
+
+    em {
+      font-size: calc($index * 0.6);
+      font-weight: 300;
+
+      @include vp-1919 {
+        font-size: calc($index * 1);
+      }
+    }
   }
 
   &__header .title--h5 {
@@ -77,7 +86,7 @@
     margin: 0;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 

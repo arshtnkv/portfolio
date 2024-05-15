@@ -1835,6 +1835,11 @@ button,
   margin-bottom: calc((1vw + 1vh) * 0.5);
 }
 
+.career__header .title--h4 em {
+  font-size: calc((1vw + 1vh) * 0.6);
+  font-weight: 300;
+}
+
 .career__header .title--h5 {
   margin-bottom: calc((1vw + 1vh) * 0.5);
 }
@@ -1853,7 +1858,7 @@ button,
 }
 
 .career__description p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .career__description ul {
@@ -2431,6 +2436,12 @@ button,
 .contact__info.container {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+@media (max-width: 1919px) {
+  .career__header .title--h4 em {
+    font-size: calc((1vw + 1vh) * 1);
+  }
 }
 
 @media (max-width: 1439px) {
