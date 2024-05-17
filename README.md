@@ -1,7 +1,13 @@
 # Портфолио
 
-## Простой Landing Page: Полигон для Тренировок
+### Простой Landing Page: Полигон для Тренировок
 URL: <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank">portfolio-arshtnkv.vercel.app</a>
+
+<br clear="both">
+
+<div>
+  <img src="source/img/content/portfolio-image.png"/>
+</div>
 
 ### Технологии:
 - PUG
@@ -16,11 +22,6 @@ URL: <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank">portfolio-
 - Примеры работ
 - Связаться со мной
 
-<br clear="both">
-
-<div>
-  <img src="source/img/content/portfolio-image.png"/>
-</div>
 
 ### Основные команды для работы:
 
