@@ -16,12 +16,12 @@
 </div>
 <div>
   <h3>Наполнение:</h3>
-  <ol>
+  <ul>
     <li>Обо мне</li>
     <li>Мой опыт</li>
     <li>Примеры работ</li>
     <li>Связаться со мной</li>
-  </ol>
+  </ul>
 </div>
 <div>
   <img src="source/img/content/portfolio-image.png"/>
