@@ -1,15 +1,26 @@
 <h1 align="center">Портфолио</h1>
 <br/>
+<h3>Light Landing page</h3>
 <p>URL:
   <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank"> portfolio-arshtnkv.vercel.app</a>
 </p>
 <div>
-  <p>Здесь можно посмотреть информацию:</p>
+  <h3>Stack:</h3>
+  <ul>
+    <li>PUG</li>
+    <li>SASS</li>
+    <li>Java Script (ECMAScript 6)</li>
+    <li>Gulp, Webpack</li>
+    <li>PHP, PHPMailer</li>
+  </ul>
+</div>
+<div>
+  <h3>Description</h3>
   <ol>
-    <li>Обо мне.</li>
-    <li>Мой опыт.</li>
-    <li>Примеры работ.</li>
-    <li>Связаться со мной.</li>
+    <li>About us</li>
+    <li>My experience</li>
+    <li>Work examples</li>
+    <li>Contact with me</li>
   </ol>
 </div>
 <div>
