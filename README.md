@@ -1,11 +1,11 @@
 <h1 align="center">Портфолио</h1>
 <br/>
-<h3>Light Landing page</h3>
+<h3>Простой Landing Page: Полигон для Тренировок</h3>
 <p>URL:
   <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank"> portfolio-arshtnkv.vercel.app</a>
 </p>
 <div>
-  <h3>Stack:</h3>
+  <h3>Технологии:</h3>
   <ul>
     <li>PUG</li>
     <li>SASS</li>
@@ -15,23 +15,19 @@
   </ul>
 </div>
 <div>
-  <h3>Description</h3>
+  <h3>Наполнение:</h3>
   <ol>
-    <li>About us</li>
-    <li>My experience</li>
-    <li>Work examples</li>
-    <li>Contact with me</li>
+    <li>Обо мне</li>
+    <li>Мой опыт</li>
+    <li>Примеры работ</li>
+    <li>Связаться со мной</li>
   </ol>
 </div>
 <div>
   <img src="source/img/content/portfolio-image.png"/>
 </div>
 
-
-## Краткая инструкция по работе
-Для начала работы у вас должент быть установлен **Node.js**
-
-### Основные команды для работы
+### Основные команды для работы:
 
 - Установка 
 ```
