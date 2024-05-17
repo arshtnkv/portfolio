@@ -1,28 +1,23 @@
-<h1 align="center">Портфолио</h1>
-<br/>
-<h3>Простой Landing Page: Полигон для Тренировок</h3>
-<p>URL:
-  <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank"> portfolio-arshtnkv.vercel.app</a>
-</p>
-<div>
-  <h3>Технологии:</h3>
-  <ul>
-    <li>PUG</li>
-    <li>SASS</li>
-    <li>Java Script (ECMAScript 6)</li>
-    <li>Gulp, Webpack</li>
-    <li>PHP, PHPMailer</li>
-  </ul>
-</div>
-<div>
-  <h3>Наполнение:</h3>
-  <ul>
-    <li>Обо мне</li>
-    <li>Мой опыт</li>
-    <li>Примеры работ</li>
-    <li>Связаться со мной</li>
-  </ul>
-</div>
+# Портфолио
+
+## Простой Landing Page: Полигон для Тренировок
+URL: <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank">portfolio-arshtnkv.vercel.app</a>
+
+### Технологии:
+- PUG
+- SASS
+- Java Script (ECMAScript 6)
+- Gulp, Webpack
+- PHP, PHPMailer
+
+### Наполнение:
+- Обо мне
+- Мой опыт
+- Примеры работ
+- Связаться со мной
+
+<br clear="both">
+
 <div>
   <img src="source/img/content/portfolio-image.png"/>
 </div>
