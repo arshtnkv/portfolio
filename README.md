@@ -1,7 +1,7 @@
 # Портфолио
 
-### Простой Landing Page: Полигон для Тренировок
-URL: <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank">portfolio-arshtnkv.vercel.app</a>
+### Landing Page:
+URL: <a href="https://webcreates.ru/" target="_blank">webcreates.ru</a>
 
 <br clear="both">
 
@@ -15,13 +15,6 @@ URL: <a href="https://portfolio-arshtnkv.vercel.app/" target="_blank">portfolio-
 - Java Script (ECMAScript 6)
 - Gulp, Webpack
 - PHP, PHPMailer
-
-### Наполнение:
-- Обо мне
-- Мой опыт
-- Примеры работ
-- Связаться со мной
-
 
 ### Основные команды для работы:
 
